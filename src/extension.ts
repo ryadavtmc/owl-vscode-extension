@@ -3,6 +3,7 @@ import { startWatching } from './terminal/watcher';
 import { createStatusBar, setWatching, setDisabled } from './ui/statusBar';
 import { resetClient } from './ai/client';
 import { installShellHook, uninstallShellHook, checkHookStatus } from './shell/installer';
+import { disposeChannel } from './ui/outputChannel';
 
 export function activate(context: vscode.ExtensionContext): void {
   const statusBar = createStatusBar();
@@ -67,4 +68,6 @@ export function activate(context: vscode.ExtensionContext): void {
   );
 }
 
-export function deactivate(): void {}
+export function deactivate(): void {
+  disposeChannel();
+}

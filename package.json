@@ -2,7 +2,7 @@
   "name": "owl",
   "displayName": "Owl",
   "description": "Your terminal, finally awake.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "owl-extension",
   "engines": {
     "vscode": "^1.93.0"
