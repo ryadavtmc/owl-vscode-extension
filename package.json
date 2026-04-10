@@ -13,7 +13,7 @@
   "icon": "images/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/owl-extension/owl"
+    "url": "https://github.com/ryadavtmc/owl-vscode-extension"
   },
   "license": "MIT",
   "main": "./dist/extension.js",
