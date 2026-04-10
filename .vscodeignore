@@ -1,0 +1,12 @@
+.env
+.env.*
+.vscode/
+.gitignore
+src/
+node_modules/
+agent_docs/
+CLAUDE.md
+tsconfig.json
+esbuild.js
+dist/*.map
+images/*.svg

@@ -1,0 +1,78 @@
+{
+  "name": "owl",
+  "displayName": "Owl",
+  "description": "Your terminal, finally awake.",
+  "version": "0.1.0",
+  "publisher": "owl-extension",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["terminal", "ai", "groq", "error", "security", "productivity"],
+  "activationEvents": ["onStartupFinished"],
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owl-extension/owl"
+  },
+  "license": "MIT",
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "owl.enable",
+        "title": "Owl: Enable"
+      },
+      {
+        "command": "owl.disable",
+        "title": "Owl: Disable"
+      },
+      {
+        "command": "owl.setApiKey",
+        "title": "Owl: Set Groq API Key"
+      },
+      {
+        "command": "owl.installShellHook",
+        "title": "Owl: Install Shell Hook (inline terminal warnings)"
+      },
+      {
+        "command": "owl.uninstallShellHook",
+        "title": "Owl: Uninstall Shell Hook"
+      }
+    ],
+    "configuration": {
+      "title": "Owl",
+      "properties": {
+        "owl.apiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "Your Groq API key. [Get one free](https://console.groq.com)"
+        },
+        "owl.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable Owl"
+        },
+        "owl.summarizeThreshold": {
+          "type": "number",
+          "default": 50,
+          "description": "Minimum output lines before Owl summarizes"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "test": "echo \"No tests yet\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.93.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "groq-sdk": "^0.7.0"
+  }
+}

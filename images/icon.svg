@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="64" fill="#1a1a2e"/>
+
+  <!-- Left eye outer -->
+  <circle cx="42" cy="58" r="22" fill="#f0a500"/>
+  <!-- Left eye inner -->
+  <circle cx="42" cy="58" r="14" fill="#1a1a2e"/>
+  <!-- Left pupil -->
+  <circle cx="42" cy="58" r="7" fill="#f0a500"/>
+  <!-- Left eye shine -->
+  <circle cx="46" cy="54" r="3" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Right eye outer -->
+  <circle cx="86" cy="58" r="22" fill="#f0a500"/>
+  <!-- Right eye inner -->
+  <circle cx="86" cy="58" r="14" fill="#1a1a2e"/>
+  <!-- Right pupil -->
+  <circle cx="86" cy="58" r="7" fill="#f0a500"/>
+  <!-- Right eye shine -->
+  <circle cx="90" cy="54" r="3" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Beak -->
+  <polygon points="64,72 57,84 71,84" fill="#f0a500"/>
+
+  <!-- Left ear tuft -->
+  <polygon points="28,28 36,48 20,48" fill="#1a1a2e"/>
+  <!-- Right ear tuft -->
+  <polygon points="100,28 108,48 92,48" fill="#1a1a2e"/>
+
+  <!-- Subtle feather texture at bottom -->
+  <ellipse cx="64" cy="108" rx="30" ry="14" fill="#f0a500" opacity="0.15"/>
+</svg>
